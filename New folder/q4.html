@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>assignment8</title>
+  <style type="text/css">
+    body{
+      background-color: skyblue;
+    }
+    textarea{
+      height: 150px;
+    }
+
+    table{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h3>Order Confirmation Form</h3>
+
+  <form>
+    <label for="name">Name:</label>&emsp;&emsp;
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="mail">email:</label>&emsp;&emsp;
+    <input type="email" name="mail" id="mail">
+    <br>
+    <label>Comments:</label>
+    <textarea rows="50" cols="8"></textarea>
+  </form>
+
+  <table border="2">
+    <tr>
+      <td>
+        <table border="2">
+          <caption>Turnover Table</caption>
+          <tr>
+            <td>S.no</td>
+            <td colspan="2">Type of Turnover</td>
+            <td colspan="3">Amount</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            <td colspan="3">3</td>
+          </tr>
+          <tr>
+            <td>(i)</td>
+            <td colspan="2">Taxable</td>
+            <td colspan="3">7</td>
+          </tr>
+          <tr>
+            <td>(iii)</td>
+            <td rowspan="2">nill rated</td>
+            <td rowspan="2">exempted</td>
+            <td colspan="3">0</td>
+          </tr>
+          <tr>
+            <td>(iv)</td>
+            <td>nil</td>
+            <td>nil</td>
+            <td>nil</td>
+          </tr>
+
+        </table>
+      </td>
+      <td>
+        <ol start="4">
+          <li>Hello from webcode</li>
+          <li>Nive list!</li>
+          <li>
+            Another item
+            <ol type="a" start="3">
+              <li>sub list item</li>
+              <li>sub list item</li>
+              <li>
+                sub <strike>list item</strike>
+                <ul>
+                  <li>subtopic1</li>
+                  <li>subtopic 2</li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>Last List item</li>
+          
+        </ol>
+      </td>
+    </tr>
+  </table>
+  <br><br><br><br>
+  <input type="reset" value="reset all">&emsp;&emsp;
+  <button>Submit</button>
+
+</body>
+</html>

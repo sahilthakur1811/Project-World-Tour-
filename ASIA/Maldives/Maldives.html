@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> World Tour</title>
+
+	<link rel="icon" href="favicon.png">
+    <style>
+        @import url('https: //fonts.googleapis.com/css2?family=Sources+Sans+Pro:wght@600&display=swap');
+        html{
+            font-size: 18px;
+            font-family: calibri;
+        }
+        body{
+            background-color: #ededed;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .btn{
+            width: 230px;
+            height: 80px;
+            color: cyan;
+            background-color: black;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            outline: none;
+            position: relative;
+            z-index: 1;
+        }
+        .btn:hover{
+            color: whitesmoke;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+        .heading2{
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            color: #1b1d1e;
+            letter-spacing: 1.5px;
+            margin-top: 4%;
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border:.6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+            background-color: white;
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+
+        @media screen and (max-width: 1500px){
+            .places .img-container{
+                flex: 20rem;
+
+            }
+        }
+
+        @media screen and (max-width: 1400px){
+            .places .img-container{
+                flex: 20rem;
+
+            }
+        }
+
+    
+        @media screen and (max-width: 1300px){
+            .margin{
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+            .map{
+                width: 21rem;
+            }
+            .flag{
+                width: 9rem;
+            }
+            
+        }
+        @media screen and (max-width: 1200px){
+            .places .img-container{
+                flex: 15rem;
+
+            }
+            .img-container img{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        @media screen and (max-width: 850px){
+            .heading2{
+                font-size: 1.8rem;
+            }
+            
+
+        }
+        
+        @media screen and (max-width: 750px){
+            .margin{
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+            .map{
+                width: 18rem;
+            }
+            .flag{
+                width: 8rem;
+            }
+
+            
+        }
+        @media screen and (max-width: 570px){
+            .heading1{
+                font-size: 2rem;
+            }
+            .map{
+                width: 14rem;
+            }
+            .flag{
+                width: 5rem;
+            }
+            .btn{
+                width: 160px;
+                height: 60px;
+                font-size: 1rem;
+            }
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="margin">
+	<h1 class="heading1"> Maldives </h1>
+  
+	<img src="12.png" class="flag">
+    <img src="mv-01.jpg" class="map">
+
+
+	<p> <b>Capital:</b> Male </p>
+	<p> <b>Population:</b>  (2021 est.) 581,600 </p>
+	<p> <b>Language:</b> Dhivehi (Maldivian) </p>
+	<p> <b>Currency:</b> United States Dollar, Maldivian rufiyaa </p>
+
+	<p>Maldives, in full Republic of Maldives, also called Maldive Islands, independent island country in the north-central Indian Ocean. It consists of a chain of about 1,200 small coral islands and sandbanks (some 200 of which are inhabited), grouped in clusters, or atolls.</p>
+    <p>This dazzling destination is a honeymooner's fantasy however you don't need to be hitched to welcome its magnificence. It's likewise an incredible spot for families and couples to search out winter sun or just have a break from their monotonous life. So you won’t feel extrinsic if you don’t have a significant other to travel with.</p>
+    </div>
+
+<div class="container">
+        <a href="#"><button class="btn">Book Now</button></a>
+    </div>
+
+
+	
+
+	<center><h1 class="heading2"> Top Attractions In Maldives </h1></center>
+
+	 <div class="places">
+   
+             <div class="img-container">
+                <img src="1.jpg">
+                <div class="content">
+                <h3> Banana Reef </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+
+            </div>
+            
+            </div>
+
+            <div class="img-container">
+                <img src="2.jpg">
+                <div class="content">
+                <h3> Como Cocoa Island </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="3.jpg">
+                <div class="content">
+                <h3> Emboodhu Finolhu Island </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="4.jpg">
+                <div class="content">
+                <h3> Fihalhohi Island </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="5.jpg">
+                <div class="content">
+                <h3> Huvahendhoo Island </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="6.jpg">
+                <div class="content">
+                <h3> Male Island </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="7.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="8.jpg">
+                <div class="content">
+                <h3> Rangali Island </h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+            <div class="img-container">
+                <img src="9.jpg">
+                <div class="content">
+                <h3> Tsunami Monument, Male </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

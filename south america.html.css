@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>South America</title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <section class="continents" id="continents">
+            <h1 class="heading">
+            <span>S</span>
+            <span>O</span>
+            <span>U</span>
+            <span>T</span>
+            <span>H</span>
+           
+		   <span>A</span>
+            <span>M</span>
+            <span>E</span>
+            <span>R</span>
+            <span>I</span>
+            <span>C</span>
+            <span>A</span>
+        </h1>
+            <div class="box-container">
+            <div class="box">
+            <img src="brazil.jpg" alt="not available">
+            <div class="content">
+            <center><h3> Brazil </h3></center>
+            
+            </div>
+            </div>
+            <div class="box">
+            <img src="argentina.jpg" alt="not available">
+            <div class="content">
+<center><h2> Argentina</h2></center>
+            </div>
+            </div>
+            <div class="box">
+            <img src="colombia.jpg" alt="not available">
+            <div class="content">
+            <center><h2> Colombia </h2></center>
+            </div>
+            </div>
+            <div class="box">
+            <img src="chile.jpg" alt="not available">
+            <div class="content">
+            <center><h2> Chile </h2></center>
+            </div>
+            </div>
+            <div class="box">
+            <img src="peru.jpg" alt="not available">
+            <div class="content">
+            <center><h2> Peru </h2></center>
+            </div>
+            </div>
+            <div class="box">
+            <img src="bolivia.jpg" alt="not available">
+            <div class="content">
+            <center><h2> Bolivia </h2></center>
+            </div>
+            </div>
+            </div>
+    </body>
+    </htmml>

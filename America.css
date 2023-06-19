@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>America</title>
+        <link rel="stylesheet" href="style3.css">
+    <style>
+
+.continents i{
+	font-size: 2.5rem;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 2rem;
+}
+
+
+    </style>
+    </head>
+    <body>
+        <section class="continents" id="continents">
+            <h1 class="heading">
+            <span>A</span>
+            <span>M</span>
+            <span>E</span>
+            <span>R</span>
+            <span>I</span>
+            <span>C</span>
+            <span>A</span>
+        </h1>
+            <div class="box-container">
+            <div class="box">
+            <a href="file:///C:/Users/saurav/Desktop/north.html"><img src="northamerica.jpeg" alt="not available"></a>
+            <div class="content">
+            <center><h2> North America</h2></center>
+            
+            </div>
+            </div>
+            <div class="box">
+            <a href="file:///C:/Users/saurav/Desktop/south.html"><img src="southamerica.jpg" alt="not available"></a>
+            <div class="content">
+            <center><h2> South America </h2></center>
+            </div>
+            </div>
+            
+    </body>
+    </htmml>

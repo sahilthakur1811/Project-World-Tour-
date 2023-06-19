@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> World Tour </title>
+
+    <link rel="icon" href="C:\Users\gsk27\OneDrive\Desktop\World Tour\Favicon.png">
+
+    <style>
+        html{
+            font-size: 18px;
+            font-family: calibri;
+            background-color: ghostwhite;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .heading2{
+            margin-top: 4%;
+            font-size: 2.5rem;
+            font-family: arial;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border: .6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top:13% ;
+        }
+        .btn-2{
+            width: 230px;
+            height: 80px;
+            border: 3px solid cyan;
+            color: cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            background-color: black;
+            outline: none;
+            border: 3px solid #42FBF2;
+            position: relative;
+            z-index: 1;
+            
+        }
+
+        .btn-2:hover{
+            color: whitesmoke;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+
+        }
+        .btn-2:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn-2:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+  </style>
+
+</head>
+
+<body>
+    <div class="margin">
+    
+    <h1 class="heading2"> Belgium </h1>
+
+    <img src="be-flag.jpg">
+
+    <p> <b>Capital:</b> Brussels </p>
+    <p> <b>Population:</b> 1.16 crores (2020 est.) </p>
+    <p> <b>Language:</b>  French </p>
+    <p> <b>Currency:</b> Euro </p>
+
+    <p> Belgium, a country in Western Europe, is known for medieval towns, Renaissance architecture and as headquarters of the European Union and NATO. The country has distinctive regions including Dutch-speaking Flanders to the north, French-speaking Wallonia to the south and a German-speaking community to the east. The bilingual capital, Brussels, has ornate guildhalls at Grand-Place and elegant art-nouveau buildings. </p></div>
+   
+    <h1 class="heading2"> Top Attractions In Belgium </h1>
+
+    <div class="places">
+     
+            <div class="img-container">
+                <img src="Basilica of the Holy Blood, Bruges.jpg">
+                <div class="content">
+                <h3> Basilica of the Holy Blood, Bruges </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Cathedral of Saint Bavo, Ghent.jpg">
+                <div class="content">
+                <h3> Cathedral of Saint Bavo, Ghent </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Ghent_s Gravensteen and Old Town.jpg">
+                <div class="content">
+                <h3> Ghent's Gravensteen and Old Town </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Grand Place (Grote Markt), Antwerp.jpg">
+                <div class="content">
+                <h3> Grand Place (Grote Markt), Antwerp </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Grand Place, Brussels.jpg">
+                <div class="content">
+                <h3> Grand Place, Brussels </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Horta Museum and Town Houses.jpg">
+                <div class="content">
+                <h3> Horta Museum and Town Houses </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Meuse Valley.jpg">
+                <div class="content">
+                <h3> Meuse Valley</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Mons Old Town.jpg">
+                <div class="content">
+                <h3>Mons Old Town </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Semois Valley.jpg">
+                <div class="content">
+                <h3> Semois Valley </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="The Battlefields of Flanders.jpg">
+                <div class="content">
+                <h3> The Battlefields of Flanders </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="The Canals and Belfry of Bruges.jpg">
+                <div class="content">
+                <h3> The Canals and Belfry of Bruges </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Waterloo.jpg">
+                <div class="content">
+                <h3> Waterloo </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+        
+    </div>
+
+</body>
+</html>

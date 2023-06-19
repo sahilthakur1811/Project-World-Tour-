@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buses ticket booking</title>
+    <link rel="icon" href="C:\Users\hp\OneDrive\Documents\CSS\home page codes\Home page codes\Favicon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://use.fontawesome.com/323ebe944f.js"></script>
+	<style>
+	
+        body{
+            background-size: cover;
+            background-position: center;
+        }
+
+        .empty{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .booking-form-box{
+            max-width: 350px;
+            border: 1px solid #ced4da;
+            margin: 10rem auto 0;
+        }
+
+        .radio-btn{
+            margin: 0 20px;
+        }
+
+        .radio-btn .button{
+            margin: 20px 10px 20px 0;
+        }
+
+        .radio-btn .button::after{
+            content: '';
+            height: 15px;
+            width: 15px;
+            top: -1px;
+            left: -1px;
+            background-color: white;
+            position: relative;
+            display: inline-block;
+            border: 3px solid white;
+            visibility: visible;
+            border-radius: 50%;
+        }
+
+        .radio-btn .button:checked::after{
+            content: '';
+            background-color: black;
+        }
+
+        .radio-btn span{
+            color: white;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+
+        .booking-form{
+            padding: 0 20px 20px;
+        }
+
+        .booking-form label{
+            margin-bottom: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: white;
+        }
+
+        input::placeholder{
+            color: white !important;
+        }
+
+        .input-grp{
+            width: 151px;
+            display: inline-block;
+        }
+
+        .form-control{
+            font-size: 12px !important;
+            border-radius: 0!important;
+            color: white!important;
+            background: transparent!important;
+            box-shadow: none!important;
+        }
+
+        .select-date::-webkit-inner-spin-button,
+        .select-date::-webkit-outer-spin-button
+        {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        ::-webkit-calendar-picker-indicator{
+            filter: invert(1);
+        }
+
+        .select-date::-webkit-calender-picker-indicator{
+            background: transparent!important;
+        }
+
+        .custom-select{
+            color: white;
+            font-size: 12px;
+            border: 1px solid #ced4da;
+            box-shadow: none!important;
+            border-radius: 0!important;
+            background: transparent!important;
+        } 
+
+        .custom-select option{
+            color: black;
+            background: white;
+        }
+
+        .buses{
+            width: 100%;
+            padding: 9px 0!important;
+            font-size: 12px!important;
+            border: 1px solid #ced4da!important;
+            background: transparent!important;
+            box-shadow: none!important;
+            border-radius: 0!important;
+        }
+
+        .buses:hover{
+            background: dodgerblue!important;
+            color: black!important;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+    </style>
+
+
+</head>
+<body style="background-image: url(https://i.pinimg.com/originals/c8/bc/c7/c8bcc7a4949d8f02a108b040f9b43b21.jpg)">
+    <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <img id="logo" class="logo" src="logo.png">
+
+
+    <nav class="nav-bar">
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/flight.html">Flights</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/Hotel.html">Hotels</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/train.html">Trains</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/Bus.html">Buses</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/CAB.html">Cabs</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/Review.html">Review</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/contact%20us.html">Contact Us</a>
+    </nav>
+
+<div id="icons">
+    <i class="fas fa-search" id="search-btn"></i>
+    <i class="fas fa-user" id="login-btn"></i>
+</div>
+
+<form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="search here...">
+    <label for="search-bar" class="fas fa-search"></label>
+</form>
+
+</header>
+
+    
+    <script src="javascript1.js"></script>
+	
+	<div class="booking-form-box">
+		<div class="radio-btn">
+			<input type="radio" class="button" name="check" checked="checked"><span>Round Trip</span>
+			<input type="radio" class="button" name="check"><span>On Way</span>
+            
+
+		</div>
+
+		<div class="booking-form">
+			<label>From</label>
+			<input type="text" class="form-control" placeholder="City">
+			<label>To</label>
+			<input type="text" class="form-control" placeholder="City">
+		
+
+		<div class="input-grp">
+			<label> To </label>
+			<input type="date" class="form-control select-date">
+		</div>
+
+		<div class="input-grp">
+			<label> Children </label>
+			<input type="date" class="form-control select-date">
+		</div>
+
+		<div class="input-grp">
+			<label> Adults </label>
+			<input type="number" class="form-control" value="1">
+		</div>
+
+		<div class="input-grp">
+			<label>Children</label>
+			<input type="number" class="form-control" value="0">
+		</div>
+
+		<div class="input-grp">
+			<label> Bus Type </label>
+			<select class="custom-select">
+			<option value="1"> Volvo </option>
+			<option value="2"> Mercedes Benz </option>
+			</select>
+		</div>
+
+		<div class="input-grp">
+			<button type="button" class="button btn-primary buses">Book Bus </button>
+		</div>
+
+
+        </div>
+		
+
+	</div>
+
+<div class="empty"></div>
+<script src="script.js"></script>
+</body>
+</html>

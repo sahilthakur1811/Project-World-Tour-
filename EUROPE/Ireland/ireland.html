@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> World Tour </title>
+
+    <link rel="icon" href="C:\Users\gsk27\OneDrive\Desktop\World Tour\Favicon.png">
+
+  <style>
+        html{
+            font-size: 18px;
+            font-family: calibri;
+            background-color: ghostwhite;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .heading2{
+            margin-top: 4%;
+            font-size: 2.5rem;
+            font-family: arial;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border: .6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top:13% ;
+        }
+        .btn-2{
+            width: 230px;
+            height: 80px;
+            border: 3px solid cyan;
+            color: cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            background-color: black;
+            outline: none;
+            border: 3px solid #42FBF2;
+            position: relative;
+            z-index: 1;
+            
+        }
+
+        .btn-2:hover{
+            color: whitesmoke;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+
+        }
+        .btn-2:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn-2:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+  </style>
+
+
+
+</head>
+
+<body>
+    <div class="margin">
+    
+    <h1 class="heading1"> Ireland </h1>
+
+    <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Europe\Ireland\main-qimg-d1695a23b4c098770a39fa312399484a.jpg">
+
+    <p> <b>Capital:</b> Dublin </p>
+    <p> <b>Population:</b> 50.5 lakhs (2021 esp.) </p>
+    <p> <b>Language:</b> Irish </p>
+    <p> <b>Currency:</b> Euro </p>
+
+    <p> The Republic of Ireland occupies most of the island of Ireland, off the coast of England and Wales. Its capital, Dublin, is the birthplace of writers like Oscar Wilde, and home of Guinness beer. The 9th-century Book of Kells and other illustrated manuscripts are on show in Dublin’s Trinity College Library. Dubbed the "Emerald Isle” for its lush landscape, the country is dotted with castles like medieval Cahir Castle. </p></div>
+   
+    <h1 class="heading2"> Top Attractions In Ireland </h1>
+
+    <div class="places">
+       
+            <div class="img-container">
+                <img src="Aran Islands.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Bru na Boinne.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Cliffs of Moher.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Dingle Peninsula _.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Dublin.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Galway.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Giant_s Causeway.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Glendalough.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="Killarney National Park.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+      
+    </div>
+
+</body>
+</html>

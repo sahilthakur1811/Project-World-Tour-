@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> World Tour</title>
+
+	<link rel="icon" href="favicon.png">
+
+    <style>
+        html{
+            font-size: 18px;
+            font-family: calibri;
+            background-color: ghostwhite;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .heading2{
+            margin-top: 4%;
+            font-size: 2.5rem;
+            font-family: arial;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border: .6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top:13% ;
+        }
+        .btn-2{
+            width: 230px;
+            height: 80px;
+            border: 3px solid cyan;
+            color: cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            background-color: black;
+            outline: none;
+            border: 3px solid #42FBF2;
+            position: relative;
+            z-index: 1;
+            
+        }
+
+        .btn-2:hover{
+            color: whitesmoke;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+
+        }
+        .btn-2:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn-2:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+
+        @media screen (max-width: 1200px){
+            .map {
+                width: 50%;
+                
+            }
+        }
+  </style>
+
+</head>
+<body>
+    <div class="margin">
+	<h1 class="heading1"> Bhutan </h1>
+   
+	<img src="f1.png" class="flag">
+     <img src="f2.jfif" class="map">
+
+	<p> <b>Capital:</b> Thimpu </p>
+	<p> <b>Population:</b> (2021 est.) 779,898 </p>
+	<p> <b>Language:</b> Dzongkha </p>
+	<p> <b>Currency:</b> Bhutanese ngultrum </p>
+
+	<p> Bhutan, a Buddhist kingdom on the Himalayas’ eastern edge, is known for its monasteries, fortresses (or dzongs) and dramatic landscapes that range from subtropical plains to steep mountains and valleys. In the High Himalayas, peaks such as 7,326m Jomolhari are popular trekking destinations. Paro Taktsang monastery (also known as Tiger’s Nest) clings to cliffs above the forested Paro Valley. </p>
+    <p> The Central Bhutan Excursion is a very well organized tour where the country’s amazing diversity offers you everything you could ever want in your holiday. You are on the way to one of the most rewarding experience of your life. You will travel through the countryside, meet with the local people and learn about their culture, history and traditions. Once you are in Bhutan, we can guarantee that the ideal landscape and the beautiful nature will surely allows you to record memories forever.</p>
+</div>
+
+<div class="container">
+        <a href="#"><button class="btn-2">Book Now</button></a>
+    </div>
+
+
+
+	
+	<center><h1 class="heading2"> Top Attractions In Bhutan </h1></center>
+
+	 
+     <div class="places">
+        
+            <div class="img-container">
+                <img src="BH1.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="BH2.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="BH3.png">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="BH4.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="BH5.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="BH6.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="BH7.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="BH8.jpg">
+                <div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+
+            <div class="img-container">
+                <img src="BH9.jpg"><div class="content">
+                <h3> Mirihi Island </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+            </div>
+        
+    </div>
+    
+
+
+</body>
+</html>

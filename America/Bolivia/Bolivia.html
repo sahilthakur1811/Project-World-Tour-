@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> World Tour </title>
+
+    <link rel="icon" href="C:\Users\gsk27\OneDrive\Desktop\World Tour\Favicon.png">
+
+    <style>
+        @import url('https: //fonts.googleapis.com/css2?family=Sources+Sans+Pro:wght@600&display=swap');
+        html{
+            font-size: 18px;
+            font-family: calibri;
+        }
+        body{
+            background-color: #ededed;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top: 13%;
+        }
+        .btn{
+            width: 230px;
+            height: 80px;
+            color: cyan;
+            background-color: black;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            outline: none;
+            position: relative;
+            z-index: 1;
+        }
+        .btn:hover{
+            color: whitesmoke;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+        .heading2{
+            margin-top: 4%;
+            font-size: 2.5rem;
+            font-family: arial;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border:.6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+            background-color: white;
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="margin">
+    <h1 class="heading1"> Bolivia </h1>
+
+    <img src="bolivia.png" class="flag">
+     <img src="bolivia map.gif" class="map">
+    
+    <p> <b>Capital:</b> Surce </p>
+    <p> <b>Population:</b> 3.8 crores (2020 est.) </p>
+    <p> <b>Language:</b> English </p>
+    <p> <b>Currency:</b> Boliviano </p>
+    
+    <p> Bolivia is a country in central South America, with a varied terrain spanning Andes Mountains, the Atacama Desert and Amazon Basin rainforest. At more than 3,500m, its administrative capital, La Paz, sits on the Andes’ Altiplano plateau with snow-capped Mt. Illimani in the background. Nearby is glass-smooth Lake Titicaca, the continent’s largest lake, straddling the border with Peru. </p>
+</div>
+
+    <div class="container">
+        <a href="#"><button class="btn"> BOOK NOW </button></a> 
+    </div>
+
+    <h1 class="heading2"> Top Attractions in Bolivia </h1>
+
+    <div class="places">
+        <div class="img-container">
+            <img src="Basilica de Nuestra Senora de Copacabana_.jpg">
+            <div class="content">
+                <h3> Basilica de Nuestra Senora de Copacabana </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="Catedral Metropolitana Basilica.jpg">
+            <div class="content">
+                <h3> Catedral Metropolitana Basilica </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="Chuquisaca.jpg">
+            <div class="content">
+                <h3> Catedral Metropolitana Basilica </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="Iglesia de San Felipe Neri.jpg">
+            <div class="content">
+                <h3> Iglesia de San Felipe Neri </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="Obelisco Potosi.jpg">
+            <div class="content">
+                <h3> Obelisco Potosi </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="Palacio Legislative_.jpg">
+            <div class="content">
+                <h3> Palacio Legislative </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="Plaza Murillo.jpg">
+            <div class="content">
+                <h3> Plaza Murillo </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="Saint Lawrence of Carangas Church_.jpg">
+            <div class="content">
+                <h3> Saint Lawrence of Carangas Church </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+        
+        <div class="img-container">
+            <img src="Train Cemetery_.jpg">
+            <div class="content">
+                <h3> Train Cemetery </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+</body>
+</html>

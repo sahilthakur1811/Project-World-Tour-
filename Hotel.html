@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> World Tour </title>
+
+    <link rel="icon" href="C:\Users\gsk27\OneDrive\Desktop\World Tour\Favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://use.fontawesome.com/323ebe944f.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="booking.css">
+
+    <style>
+        html{
+            overflow: hidden;
+        }
+
+
+
+        body{
+            background-image: url(https://wallpapercave.com/wp/wp6957266.jpg);
+            
+        }
+
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+            transition: .5s;
+            
+        }
+
+        .empty{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        #myInput {
+            height: 50px;
+            width: 500px;
+            font-size: 20px;
+            padding: 0 25px;
+            border: 2px solid #ddd;
+            margin-top: 24rem;
+            margin-left: 28rem;
+        }
+
+        input[type="submit"]{
+            position: relative;
+            left: -5px;
+            height: 50px;
+            width: 150px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: #ffc107;
+            color: white;
+            font-size: 20px;
+        }
+
+        input[type="submit"]:hover{
+            background: #ff5722;
+        }
+
+        #myUL {
+          list-style-type: none;
+          width: 649.5px;
+          padding: 0;
+          margin: 0;
+          margin-left: 28rem;
+        }
+
+        #myUL li a {
+          border: 1px solid #ddd;
+          margin-top: -1px; /* Prevent double borders */
+          background-color: #f6f6f6;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px;
+          color: black;
+          display: block;
+          background-color: #ededed;
+        }
+
+        #myUL li a:hover:not(.header) {
+          background-color: #a6a6a6;
+        }
+
+        @media screen and (max-width: 1400px){
+            #myInput{
+                margin-left: 20%;
+                width: 50%;
+            }
+            #myUL{
+                margin-left: 20%;
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 800px){
+            #myInput{
+                margin-left: 15%;
+            }
+            #myUL{
+                margin-left: 15%;
+                
+            }
+        }
+        @media screen and (max-width: 600px){
+            #myInput{
+                margin-left: 10%;
+            }
+            #myUL{
+                margin-left: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+     <img id="logo" class="logo" src="logo.png">
+
+
+    <nav class="nav-bar">
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/flight.html">Flights</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/Hotel.html">Hotels</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/train.html">Trains</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/Bus.html">Buses</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/CAB.html">Cabs</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/Review.html">Review</a>
+        <a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/contact%20us.html">Contact Us</a>
+    </nav>
+
+
+<div id="icons">
+    <i class="fas fa-search" id="search-btn"></i>
+    <i class="fas fa-user" id="login-btn"></i>
+</div>
+
+<form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="search here...">
+    <label for="search-bar" class="fas fa-search"></label>
+</form>
+
+</header>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="type here...">
+<input type="submit" value="Search">
+<ul id="myUL">
+  <li><a href="file:///C:/Users/gsk27/OneDrive/Desktop/World%20Tour/Hotels/GermanyH.html" target="_blank">Germany</a></li>
+  <li><a href="#"target="_blank">Italy</a></li>
+  <li><a href="#"target="_blank">France</a></li>
+  <li><a href="#"target="_blank">UK</a></li>
+  <li><a href="#"target="_blank">Switzerland</a></li>
+  <li><a href="#"target="_blank">Austria</a></li>
+  <li><a href="#"target="_blank">Denmark</a></li>
+  <li><a href="#"target="_blank">Ireland</a></li>
+  <li><a href="#"target="_blank">Norway</a></li>
+  <li><a href="file:///C:/Users/Sarabjit/OneDrive/Desktop/PROJECT%201/ASIA/Bhutan/bhotel/Bhotel.html"target="_blank">Bhutan</a></li>
+</ul>
+
+<div class="empty"></div>
+
+<script>
+var UL = document.getElementById("myUL");
+// hilde the list by default
+UL.style.display = "none";
+
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    ul = document.getElementById("myUL");
+    filter = input.value.toUpperCase();
+    // if the input is empty hide the list
+    if(filter.trim().length < 1) {
+        ul.style.display = "none";
+        return false;
+    } else {
+        ul.style.display = "block";
+    }
+    
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        
+        // This is when you want to find words that contain the search string
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) { 
+        li[i].style.display = "";
+    }else {
+        li[i].style.display = "none";
+    } 
+    }
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
